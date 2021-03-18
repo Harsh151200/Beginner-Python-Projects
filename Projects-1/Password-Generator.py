@@ -74,9 +74,8 @@ def generate1():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        up_sm = string.ascii_uppercase + string.ascii_lowercase
+        password = password.join(random.sample(up_sm, n))
         return password
     except:
         return  "Invalid length_value"
@@ -85,9 +84,8 @@ def generate2():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z','0','1','2','3','4', '5', '6', '7', '8', '9']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        up_sm_num = string.ascii_uppercase + string.ascii_lowercase + string.digits
+        password = password.join(random.sample(up_sm_num, n))
         return password
     except:
         return  "Invalid length_value"
@@ -96,9 +94,8 @@ def generate3():
     try:
         n=int(length_value)
         password=""
-        listpass=['0','1','2','3','4', '5', '6', '7', '8', '9']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        num = string.digits
+        password = password.join(random.sample(num, n))
         return password
     except:
         return  "Invalid length_value"
@@ -107,9 +104,8 @@ def generate4():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z','0','1','2','3','4', '5', '6', '7', '8', '9','@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        up_sm_num_spc = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
+        password = password.join(random.sample(up_sm_num_spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -118,9 +114,8 @@ def generate5():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        sm = string.ascii_lowercase
+        password = password.join(random.sample(sm, n))
         return password
     except:
         return  "Invalid length_value"
@@ -129,9 +124,8 @@ def generate6():
     try:
         n=int(length_value)
         password=""
-        listpass=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        up = string.ascii_uppercase 
+        password = password.join(random.sample(up, n))
         return password
     except:
         return  "Invalid length_value"
@@ -140,9 +134,8 @@ def generate7():
     try:
         n=int(length_value)
         password=""
-        listpass=['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        spc = string.punctuation
+        password = password.join(random.sample(spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -151,9 +144,8 @@ def generate8():
     try:
         n=int(length_value)
         password=""
-        listpass=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z','0','1','2','3','4', '5', '6', '7', '8', '9']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        up_num = string.ascii_uppercase + string.digits
+        password = password.join(random.sample(up_num, n))
         return password
     except:
         return  "Invalid length_value"
@@ -162,9 +154,8 @@ def generate9():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','0','1','2','3','4', '5', '6', '7', '8', '9']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        sm_num = string.digits + string.ascii_lowercase
+        password = password.join(random.sample(sm_num, n))
         return password
     except:
         return  "Invalid length_value"
@@ -173,9 +164,8 @@ def generate10():
     try:
         n=int(length_value)
         password=""
-        listpass=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z','0','@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        up_spc = string.ascii_uppercase + string.punctuation
+        password = password.join(random.sample(up_spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -184,9 +174,8 @@ def generate11():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        sm_spc = string.punctuation + string.ascii_lowercase
+        password = password.join(random.sample(sm_spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -195,9 +184,8 @@ def generate12():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z','@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        sm_up_spc = string.ascii_uppercase + string.ascii_lowercase + string.punctuation
+        password = password.join(random.sample(sm_up_spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -206,9 +194,8 @@ def generate13():
     try:
         n=int(length_value)
         password=""
-        listpass=['0','1','2','3','4', '5', '6', '7', '8', '9','@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        num_spc = string.digits + string.punctuation
+        password = password.join(random.sample(num_spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -217,9 +204,8 @@ def generate14():
     try:
         n=int(length_value)
         password=""
-        listpass=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','0','1','2','3','4', '5', '6', '7', '8', '9','@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>','*', '(', ')']
-        for i in range(0,n):
-            password+=random.choice(listpass)
+        sm_num_spc = string.digits + string.ascii_lowercase + string.punctuation
+        password = password.join(random.sample(sm_num_spc, n))
         return password
     except:
         return  "Invalid length_value"
@@ -254,7 +240,7 @@ C4.place(x=320,y=40)
 
 #Length scale
 s1 = Scale( root, variable = length,  
-           from_ = 1, to = 16,  
+           from_ = 7, to = 16,  
            orient = HORIZONTAL,command=get_slider_value
            ) 
 s1.place(x=550,y=40)
@@ -280,5 +266,7 @@ copy_btn = Button(master=root, text="Copy",fg="green",
                 font=("Arial", 10, 'bold') ,command=copyclip).place(x=320,y=230)
 
 
+photo = PhotoImage(file = "Projects-1/password.png")
+root.iconphoto(False, photo)
+
 root.mainloop()
-print(length_value)

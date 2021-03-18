@@ -1,5 +1,5 @@
 # Next Prime Number - Have the program find prime numbers until the user
-# chooses to stop asking for the next one
+# chooses to stop asking for the next 
 
 
 print("Press enter to continue printing the number or print 'q' for stopping th execution")
