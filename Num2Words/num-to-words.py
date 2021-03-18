@@ -54,7 +54,7 @@ display.place(x=10, y=300)
 
 
 
-photo = PhotoImage(file = "Projects-1/Num2Words/number.png")
+photo = PhotoImage(file = "Num2Words/number.png")
 root.iconphoto(False, photo)
 
 root.mainloop()

@@ -22,7 +22,7 @@ def alarm(set_alarm_timer):
             play = 0
             while play != 10:  # This will ring alarm for 10 seconds
                 playsound(
-                    "/home/harsh/Harsh/Python/TryCatch-Projects/Projects-1/sound.wav")
+                    "sound.wav")
                 play += 1
             print("Set alarm again")
             return

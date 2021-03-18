@@ -36,7 +36,7 @@ tax = "0"
 total_cost = "0"
 
 #Reading Country-Tax CSV File
-reader = pd.read_csv("Projects-1/tax.csv")
+reader = pd.read_csv("tax.csv")
 countries = list(reader['Country'].values)
 
 title = Label(root, text="Tax Calculator",
@@ -76,7 +76,7 @@ total_cost_value = Label(root, text=total_cost,
                fg="black", font=("Arial", 15, 'bold'))
 total_cost_value.place(x=370, y=200)
 
-photo = PhotoImage(file = "Projects-1/Tax Calculator/tax.png")
+photo = PhotoImage(file = "Tax Calculator/tax.png")
 root.iconphoto(False, photo)
 
 root.mainloop()
