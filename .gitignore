@@ -64,7 +64,12 @@ $RECYCLE.BIN/
 .history/
 *.code-workspace
 
-.idea/
+.idea/TryCatch-Projects.iml
+.idea.misc.xml
+.idea/modules.xml
+.idea/vsc.xml
+.idea/workspace.xml
+.idea/inspectionProfiles/profiles_settings.xml
 
 Projects-1/Text Editor/net-textedit.py
 
