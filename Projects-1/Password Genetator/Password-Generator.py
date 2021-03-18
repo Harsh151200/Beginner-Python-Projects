@@ -266,7 +266,7 @@ copy_btn = Button(master=root, text="Copy",fg="green",
                 font=("Arial", 10, 'bold') ,command=copyclip).place(x=320,y=230)
 
 
-photo = PhotoImage(file = "Projects-1/password.png")
+photo = PhotoImage(file = "Projects-1/Password Genetator/password.png")
 root.iconphoto(False, photo)
 
 root.mainloop()
