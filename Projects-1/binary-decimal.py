@@ -1,3 +1,10 @@
+"""
+Binary to Decimal and Back Converter - 
+
+Develop a converter to convert a decimal number to binary or 
+a binary number to its decimal equivalent.
+"""
+
 class NumberSystemConversions:
     def binary_to_decimal(self, binary):
         self.binary = list(str(binary))

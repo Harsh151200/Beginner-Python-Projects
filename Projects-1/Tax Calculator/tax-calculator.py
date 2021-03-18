@@ -1,4 +1,8 @@
-
+"""
+Tax Calculator - 
+    Asks the user to enter a cost and either a country or state tax. 
+    It then returns the tax plus the total cost with tax.
+"""
 from tkinter import *
 from tkinter import ttk
 import pandas as pd
@@ -60,7 +64,7 @@ btn = Button(master=root, text="calculate",fg="green", font=("Arial", 10, 'bold'
 #Displaying amount of tax to  be paid
 tax_value = Label(root, text="Your tax : ",
                fg="black", font=("Arial", 15, 'bold')).place(x=30, y=200)
-display_tax_value = Label(root, text="",fg="black", font=("Arial", 15, 'bold'))
+display_tax_value = Label(root, text=tax,fg="black", font=("Arial", 15, 'bold'))
 display_tax_value.place(x=130, y=200)
 
 
@@ -72,7 +76,7 @@ total_cost_value = Label(root, text=total_cost,
                fg="black", font=("Arial", 15, 'bold'))
 total_cost_value.place(x=370, y=200)
 
-photo = PhotoImage(file = "Projects-1/tax.png")
+photo = PhotoImage(file = "Projects-1/Tax Calculator/tax.png")
 root.iconphoto(False, photo)
 
 root.mainloop()

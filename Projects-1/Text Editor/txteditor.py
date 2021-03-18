@@ -1,4 +1,10 @@
-# GUI Python Program
+"""
+Text Editor -
+Notepad style application that can open, edit, and save text documents. 
+
+Optional: Add syntax highlighting and other features.
+
+"""
 
 from tkinter import *
 from tkinter.filedialog import askopenfile, asksaveasfile, askopenfilename, asksaveasfilename
@@ -79,6 +85,8 @@ class TextEditor:
         
     def __init__(self):
         self.root = Tk()
+        
+        # Adding Scorll Bar
         scrollbar = Scrollbar(self.root)
         scrollbar.pack(side=RIGHT, fill=Y)
         self.root.title("Untitled-TryCatch Text Editor")
@@ -86,6 +94,7 @@ class TextEditor:
         self.file = None
         self.filename = None
         
+        #Adding Menu Bar
         menubar = Menu(self.root)
         self.filemenu = Menu(menubar, tearoff=0)
         self.filemenu.add_command(label="New", command=self.new)
@@ -120,7 +129,7 @@ class TextEditor:
 
         self.root.config(menu=menubar)
 
-
+        # Adding Text field
         self.text = Text(self.root)
         self.text.pack()
         self.text.tag_add("here", "1.0", "1.4")
@@ -132,11 +141,16 @@ class TextEditor:
         self.photo = PhotoImage(file = "Projects-1/edit-text.png")
         self.root.iconphoto(False, self.photo)
         
-        
+        # Running GUI application
         self.root.mainloop()
 
     
 # print(filename)
 win = dict()
 
+"""
+For initial, we have created an instance of Class Text editor and stored that instance in dictionary
+
+Then if user clicks on new then a new instance is created and appended in dictionary.
+"""
 win[counter] = TextEditor()
