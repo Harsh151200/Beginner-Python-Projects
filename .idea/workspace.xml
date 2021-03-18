@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb0ea2a6-2774-470b-933e-244c8372a4ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Projects-1/count-vowels.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/count-vowels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects-1/demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/demo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects-1/each-word-count.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/each-word-count.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects-1/find-prime-numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/find-prime-numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects-1/num-to-words.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/num-to-words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects-1/tax-calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/tax-calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects-1/txteditor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/txteditor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects-1/Password Genetator/Password-Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects-1/Password Genetator/Password-Generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="SvnConfiguration">
@@ -42,8 +37,12 @@
       <updated>1614849682172</updated>
       <workItem from="1614849734925" duration="154000" />
       <workItem from="1615727315540" duration="56000" />
+      <workItem from="1616085571753" duration="183000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1615727365238">
