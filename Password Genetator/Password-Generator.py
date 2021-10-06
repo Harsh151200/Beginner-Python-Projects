@@ -6,7 +6,7 @@ import pyperclip
 import random, string
 
 no_of_options = 0
-length_value = 0
+length_value = 7
 
 
 def get_slider_value(value):
