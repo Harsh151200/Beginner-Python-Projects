@@ -6,7 +6,7 @@ import pyperclip
 import random, string
 
 no_of_options = 0
-length_value = 0
+length_value = 7
 
 
 def get_slider_value(value):
@@ -25,47 +25,26 @@ def generate_pass():
     global no_of_options, length_value
     password = ""
 
-    if upper_case.get() == 1 and small_case.get() == 1 and special_Chars.get() == 0 and num.get() == 0:
-        password = generate1()
+    switchCode = str(upper_case.get())+str(small_case.get())+str(special_Chars.get())+str(num.get())
 
-    if upper_case.get() == 1 and small_case.get() == 1 and special_Chars.get() == 0 and num.get() == 1:
-        password = generate2()
-
-    if upper_case.get() == 0 and small_case.get() == 0 and special_Chars.get() == 0 and num.get() == 1:
-        password = generate3()
-
-    if upper_case.get() == 1 and small_case.get() == 1 and special_Chars.get() == 1 and num.get() == 1:
-        password = generate4()
-
-    if upper_case.get() == 0 and small_case.get() == 1 and special_Chars.get() == 0 and num.get() == 0:
-        password = generate5()
-
-    if upper_case.get() == 1 and small_case.get() == 0 and special_Chars.get() == 0 and num.get() == 0:
-        password = generate6()
-
-    if upper_case.get() == 0 and small_case.get() == 0 and special_Chars.get() == 1 and num.get() == 0:
-        password = generate7()
-
-    if upper_case.get() == 1 and small_case.get() == 0 and special_Chars.get() == 0 and num.get() == 1:
-        password = generate8()
-
-    if upper_case.get() == 0 and small_case.get() == 1 and special_Chars.get() == 0 and num.get() == 1:
-        password = generate9()
-
-    if upper_case.get() == 1 and small_case.get() == 0 and special_Chars.get() == 1 and num.get() == 0:
-        password = generate10()
-
-    if upper_case.get() == 0 and small_case.get() == 1 and special_Chars.get() == 1 and num.get() == 0:
-        password = generate11()
-
-    if upper_case.get() == 1 and small_case.get() == 1 and special_Chars.get() == 1 and num.get() == 0:
-        password = generate12()
-
-    if upper_case.get() == 0 and small_case.get() == 0 and special_Chars.get() == 1 and num.get() == 1:
-        password = generate13()
-
-    if upper_case.get() == 0 and small_case.get() == 1 and special_Chars.get() == 1 and num.get() == 1:
-        password = generate14()
+    switcher = {
+        '1100': generate1,
+        '1101': generate2,
+        '0001': generate3,
+        '1111': generate4,
+        '0100': generate5,
+        '1000': generate6,
+        '0010': generate7,
+        '1001': generate8,
+        '0101': generate9,
+        '1010': generate10,
+        '0110': generate11,
+        '1110': generate12,
+        '0011': generate13,
+        '0111': generate14
+    }
+        
+    password = switcher.get(switchCode, lambda: "Please select atleast one checkbox ")()
 
     password_entry.delete(0, END)
     password_entry.insert(0, password)
