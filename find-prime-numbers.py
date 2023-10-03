@@ -5,7 +5,7 @@ Next Prime Number -
 """
 
 
-print("Press enter to continue printing the number or print 'q' for stopping th execution")
+print("Press enter to continue printing the number or print 'q' for stopping the execution")
 
 next = input()  # for starting puropse if user wants to continue or not
 if next == 'q':
