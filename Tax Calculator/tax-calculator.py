@@ -76,7 +76,7 @@ total_cost_value = Label(root, text=total_cost,
                fg="black", font=("Arial", 15, 'bold'))
 total_cost_value.place(x=370, y=200)
 
-photo = PhotoImage(file = "Tax Calculator/tax.png")
+photo = PhotoImage(file = "tax.png")
 root.iconphoto(False, photo)
 
 root.mainloop()
